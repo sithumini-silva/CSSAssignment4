@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case 05</title>
+
+  <link rel="stylesheet" href="../assets/lib/normalize.css">
+
+</head>
+<style>
+  main{
+    height: 70vh;
+    width: 80vw;
+    border: 5px solid darkslategrey;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  }
+  section{
+    animation: my-animation 4s alternate infinite;
+    width: fit-content;
+    display: flex;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  section>div{
+    height: 80vh;
+    width: 80vw;
+  }
+  section>div:first-child{
+    background: url("../assets/images/nature.jpg");
+    background-size: cover;
+    background-position: center;
+
+  }
+  section>div:nth-child(2) {
+    background: url("../assets/images/bird.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  section>div:nth-child(3) {
+    background: url("../assets/images/nature2.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  section>div:nth-child(4) {
+    background: url("../assets/images/fish.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  @keyframes my-animation {
+    0%, 20%{
+      transform: translate(0%);
+    }
+    25%, 45%{
+      transform: translate(-25%);
+    }
+    50%, 70%{
+      transform: translate(-50%);
+    }
+    75%, 100%{
+      transform: translate(-75%);
+    }
+  }
+</style>
+<body>
+<main>
+  <section>
+    <div></div>
+
+    <div></div>
+
+    <div></div>
+
+    <div></div>
+  </section>
+</main>
+
+</body>
+</html>
