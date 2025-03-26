@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Case 02</title>
+</head>
+<style>
+  body{
+    background: linear-gradient(90deg, hsla(192, 95%, 50%, 1) 0%, hsla(225, 89%, 47%, 1) 100%);
+  }
+
+  div{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background: gray;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /*border-top-color:  red;*/
+  }
+  div>h1{
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+  }
+  div::before{
+    content: "";
+    border: 20px solid white;
+    border-radius: 100%;
+    border-top-color: red;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  div:hover::before{
+    transform: rotate(360deg);
+    transition-duration: 2s;
+  }
+
+</style>
+<body>
+
+<div>
+  <h1>RWAD</h1>
+</div>
+
+
+</body>
+</html>
